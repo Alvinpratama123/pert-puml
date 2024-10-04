@@ -1,0 +1,26 @@
+@startuml part2
+left to right direction
+
+
+actor Dosen as dosen
+actor Mahasiswa as mahasiswa
+
+
+ package Classroam{
+   usecase  "menerima penjadwalan" as U1
+   usecase  "pilih mata kuliah" as U2
+   usecase  "ruang perkulihan" as U3
+   usecase  "mengajar mahasiswa" as U4
+   usecase  "tolak mengajar" as U5
+ }
+
+ mhs -->U1 
+ U1 -->U2
+ U1 -->U3
+ mhs -->U4
+ dsn -->U5
+
+
+@enduml
+    
+   
